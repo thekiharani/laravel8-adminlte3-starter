@@ -24,7 +24,7 @@
             </a>
 
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
+            <a href="{{ route('password.change') }}" class="dropdown-item">
                 <i class="fas fa-user-lock mr-2"></i>
                 {{ __('Change Password') }}
             </a>

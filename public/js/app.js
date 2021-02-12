@@ -1858,6 +1858,18 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$(function () {
+  $('#show_pass').change(function () {
+    var pwd = $('#password');
+
+    if ($('#show_pass').is(':checked')) {
+      pwd.attr('type', 'text');
+    } else {
+      pwd.attr('type', 'password');
+    }
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
