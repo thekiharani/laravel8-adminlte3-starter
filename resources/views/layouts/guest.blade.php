@@ -12,9 +12,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', config('app.name')) | {{ config('app.name', 'Laravel') }}</title>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>@yield('title', 'Home') | {{ config('app.name', 'The Contenty') }}</title>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ asset('logo.png') }}">
     <!-- Ionicons -->
      <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Custom CSS -->
@@ -36,6 +38,9 @@
 
     <!-- JQuery, Bootstrap, & Popper JavaScript -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        //
+    </script>
     @stack('js')
 </body>
 
