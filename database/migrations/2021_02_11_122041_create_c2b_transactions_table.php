@@ -14,7 +14,7 @@ class CreateC2BTransactionsTable extends Migration
     public function up()
     {
         Schema::create('c2b_transactions', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
             $table->string('FirstName')->nullable();
             $table->string('MiddleName')->nullable();
             $table->string('LastName')->nullable();
